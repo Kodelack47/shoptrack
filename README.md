@@ -57,3 +57,9 @@ Then open `http://localhost:8000` in your browser.
 
 These are all separate stories in the backlog and would each get their own
 design-and-build pass in a real sprint.
+
+## Author
+
+**Ousmana Tunkara** · [GitHub @Kodelack47](https://github.com/Kodelack47)
+
+Licensed under the [MIT License](LICENSE).

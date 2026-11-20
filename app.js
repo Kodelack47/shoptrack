@@ -1,3 +1,4 @@
+/* Author: Ousmana Tunkara · github.com/Kodelack47 · ShopTrack */
 /*
  * ShopTrack prototype - Add/Edit/Delete Product Listings (FR1 / US1)
  *
