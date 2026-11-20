@@ -39,6 +39,26 @@ python3 -m http.server 8000
 
 Then open `http://localhost:8000` in your browser.
 
+## Design
+
+**Use cases** for the whole ShopTrack system (this prototype covers *Add / Edit Product Listing*):
+
+![ShopTrack use case diagram](docs/use-case-diagram.png)
+
+**Domain model** for the full system:
+
+![ShopTrack domain class diagram](docs/domain-class-diagram.png)
+
+**Components of this prototype.** `ProductRepository` is the only piece that talks to
+`localStorage`, `validateProduct` is a pure function with no DOM or storage access, and
+`ProductController` connects the form and table to both:
+
+![Component class diagram for the product listings feature](docs/component-class-diagram.png)
+
+**Add Product flow**, including the validation-error path:
+
+![Sequence diagram for adding a product](docs/add-product-sequence-diagram.png)
+
 ## What it does
 
 - Add a new product with a SKU, name, price, and quantity on hand
