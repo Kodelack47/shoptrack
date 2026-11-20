@@ -6,8 +6,8 @@ This is a small working prototype of one feature from my ShopTrack backlog
 It's a client-only app - there's no real backend or database. Product data
 is saved in the browser's `localStorage`, so it will still be there if you
 refresh the page, but it's specific to whatever browser/machine you're using.
-That's a known limitation, not a bug - see the reflection section in the
-write-up for why I built it this way for a prototype.
+That's a known limitation, not a bug: for a prototype, keeping everything in the
+browser made it possible to build and test the whole feature end to end.
 
 ## Files
 
@@ -15,9 +15,8 @@ write-up for why I built it this way for a prototype.
 - `style.css` - styling
 - `app.js` - all the logic: data model, repository (storage), validation,
   and the controller that wires the form/table to everything else
-- `mockup_populated.html`, `mockup_validation.html` - static, non-interactive
-  pages used only to generate screenshots for the write-up. They are not
-  part of the working app.
+- `test-plan.md` - the verification and validation plan with steps for each test case
+- `docs/` - design diagrams and screenshots used in this README
 
 ## How to run it
 
