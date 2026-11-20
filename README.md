@@ -68,6 +68,21 @@ Then open `http://localhost:8000` in your browser.
   quantity must be zero or more
 - Data persists in `localStorage` between page refreshes
 
+## Screenshots
+
+| Empty state | Editing a product | Validation errors |
+|---|---|---|
+| ![App with no products yet](docs/screenshot-empty.png) | ![Product table with the form in edit mode](docs/screenshot-edit-mode.png) | ![Validation errors after an invalid entry](docs/screenshot-validation.png) |
+
+## Testing
+
+Six test cases were run by hand against the prototype (full steps in [`test-plan.md`](test-plan.md)):
+
+![Test results: six test cases, all passing](docs/test-results.png)
+
+TC5 passes in normal browser windows but fails in private mode when storage is blocked,
+since the prototype depends on `localStorage`. That's a known limitation of a client-only prototype.
+
 ## What it does not do (out of scope for this prototype)
 
 - No real backend, database, or multi-user support
